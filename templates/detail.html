@@ -1,0 +1,63 @@
+<ion-view view-title="Logical Puzzles" style="background-color:">
+<ion-content class='header-background has-header padding scrolling' scroll='true'>
+   
+    
+    
+    
+    <div class="list card">
+        
+
+  <div class="item item-image">
+    <ion-slide-box on-slide-changed="slideHasChanged($index) ">
+
+ 
+</ion-slide-box>
+     
+    <h1>{{detail.name}}</h1>
+   
+    <p></p>
+  </div>
+        
+        <div class="item item-body">
+            <h2>Question</h2>
+    <p>{{detail.about}}</p>
+      </div>
+
+  <div class="item item-body">
+      <h2>Answer</h2>
+   
+
+ 
+             
+	  <br>
+	  
+	  
+	  <td><a href="#" ng-click="showDetails =! showDetails"><button class="button button-small button-assertive">Click to See</button></a>
+                <div id="mydiv" ng-show="showDetails">
+                    <div id="mydiv-container">
+                        <div id="mydiv-content">
+                            <a href="#" ng-click="showDetails =! showDetails"></a>
+                            <br>
+                           {{detail.address}}
+                        </div>
+                    </div>
+                </div>
+
+                </td>
+	  
+	  
+	  
+	  
+
+	  
+	  
+	  
+	  
+        
+    </div>
+        </div>
+
+  
+    </div>
+</ion-content>
+</ion-view>

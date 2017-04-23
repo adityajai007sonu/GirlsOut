@@ -1,0 +1,22 @@
+<ion-view view-title="Logical Puzzles">
+  <ion-content style="">
+     <div class="cate-lv2" style="">
+          
+         
+           <div class="card " ng-repeat="list in lists | filter:search" style="background-color:#EF473A">
+         <a href="#/app/detail/{{list.id}}">
+            <div class="item item-body">
+				
+				
+                <p>{{list.name}}</p>
+               
+            </div>
+          </a> 
+         </div>
+         
+         
+  </div>
+  </ion-content>
+</ion-view>       
+         
+     
